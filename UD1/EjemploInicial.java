@@ -19,7 +19,7 @@ public class EjemploInicial {
 
         //Aquí se escribe el código del programa.
         System.out.print(welcome);
-
+        
     }
     
 }
