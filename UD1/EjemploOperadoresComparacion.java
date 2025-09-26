@@ -23,8 +23,6 @@ public class EjemploOperadoresComparacion {
             puedeIrDelante = true; 
         }
 
-
-
         System.out.println("La condicion de si puede ir delante es: " + puedeIrDelante);
 
         /*
@@ -39,11 +37,11 @@ public class EjemploOperadoresComparacion {
 
          if (pesoIcaro < 80.5 && (casoPadre == true || rangoGoogleFit > 5)){
 
-            System.err.println("Llego a Atenas");
+            System.out.println("Llego a Atenas");
 
          } else {
 
-            System.err.println("No llego a Atenas");
+            System.out.println("No llego a Atenas");
          }
 
          /*
@@ -54,11 +52,11 @@ public class EjemploOperadoresComparacion {
 
          if (rangoGoogleFit > 10 || (pesoIcaro != 90 || casoPadre == true)){
 
-            System.err.println("consiguio las llaves");
+            System.out.println("consiguio las llaves");
 
          } else {
 
-            System.err.println("No las consiguio :c");
+            System.out.println("No las consiguio :c");
          }
 
         teclado.close(); //cierra la comunicación con el teclado.

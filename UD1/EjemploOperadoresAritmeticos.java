@@ -14,20 +14,20 @@ public class EjemploOperadoresAritmeticos {
 
 
 
-        System.err.println("La suma de las edad es: " + sumaEdades);
-        System.err.println("La diferencia de edad es de: " + diferenciaEdades);
-        System.err.println("La media de las edades es de; " + media);
-        System.err.println("El doble de la del hijo es: " + dobleHijo);
-        System.err.println("El resto es de: " + resto);
+        System.out.println("La suma de las edad es: " + sumaEdades);
+        System.out.println("La diferencia de edad es de: " + diferenciaEdades);
+        System.out.println("La media de las edades es de; " + media);
+        System.out.println("El doble de la del hijo es: " + dobleHijo);
+        System.out.println("El resto es de: " + resto);
 
         edadHijo += 10;
 
-        System.err.println("En 10 anios el hijo tendra: " + edadHijo);
+        System.out.println("En 10 anios el hijo tendra: " + edadHijo);
 
         edadHijo++;
         
-        System.err.println("Y en un anio mas tendra: " + edadHijo);
-        System.err.println("Prueba: X++ " + edadHijo++); //Primero se muestra, luego se suma.
-        System.err.println("Prueba: ++X " + ++edadHijo); //Primero se suma, luego se muestra.
+        System.out.println("Y en un anio mas tendra: " + edadHijo);
+        System.out.println("Prueba: X++ " + edadHijo++); //Primero se muestra, luego se suma.
+        System.out.println("Prueba: ++X " + ++edadHijo); //Primero se suma, luego se muestra.
     }
 }
