@@ -10,7 +10,7 @@ public class BuscaMinas {
         * Para el hundir la flota es igual pero de caracteres y 8 posiciones.
         */
         int[][] mapaBombas =  {{0,0,1},{0,1,0},{0,0,0}};
-        int[][] mapaJugador =  {{9,9,9},{9,9,9},{9,9,9}};        
+        int[][] mapaJugador =  {{9,9,9},{9,9,9},{9,9,9}};
         int cantBombas = 0; //variable para contar las bombas
         Scanner teclado = new Scanner(System.in);
 
