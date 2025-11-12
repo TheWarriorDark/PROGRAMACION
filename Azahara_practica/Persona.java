@@ -70,28 +70,3 @@ public void estaJubilado()
 }
 
 }
-
-
-// Clase Biblioteca
-class Biblioteca {
-private List<Libro> libros;
-public Biblioteca()
-{
-libros = new ArrayList<>();
-}
-
-public void agregarLibro(Libro l)
-{
-libros.add(l);
-}
-
-public void mostrarLibros()
-{
-System.out.println("Libros en la biblioteca:");
-for (Libro l : libros)
-{
-System.out.println("- " + l.getTitulo());
-}
-}
-
-}
