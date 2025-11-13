@@ -3,7 +3,7 @@ package Azahara_practica;
 import java.util.ArrayList;
 import java.util.List;
 
-// Clase Persona
+//Atributos
 public class Persona {
 private String nombre;
 private String apellidos;
@@ -14,7 +14,7 @@ private String email;
 private String profesion;
 private int Anyos_de_experiencia;
 
-//Sets
+//Setters
 public void setEdad (int edad) {
 if (edad > 0) {
 this.edad = edad;
@@ -44,7 +44,7 @@ public void setEmail (int Anyos_de_experiencia) {
 this.Anyos_de_experiencia = Anyos_de_experiencia;
 }
 
-//Gets
+//Getters
 public String getNombre () {return nombre;
 }
 public String getApellidos () {return apellidos;
@@ -62,9 +62,10 @@ public String getProfesion () {return profesion;
 public int getAnyos_de_experiencia () {return Anyos_de_experiencia;
 }
 
+//Metodos
 public void estaJubilado()
 {
-    if (edad>65)
+    if (this.edad>65)
     {System.out.println("Estas jubilao friki");}
     else {System.out.println("No estas jubilao friki");}
 }
