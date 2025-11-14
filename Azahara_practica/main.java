@@ -5,5 +5,3 @@ public class main {
     // Main
 Persona p = new Persona();
 p.setEdad(-3);
-
-}

@@ -14,6 +14,21 @@ private String email;
 private String profesion;
 private int Anyos_de_experiencia;
 
+//Constructores
+public Persona() {
+}
+
+public Persona(String nombre, String apellidos, String DNI, int edad, long telefono, String email, String profesion, int Anyos_de_experiencia) {
+    this.nombre = nombre;
+    this.apellidos = apellidos;
+    this.DNI = DNI;
+    this.edad = edad;
+    this.telefono = telefono;
+    this.email = email;
+    this.profesion = profesion;
+    this.Anyos_de_experiencia = Anyos_de_experiencia;
+}
+
 //Setters
 public void setEdad (int edad) {
 if (edad > 0) {
@@ -37,10 +52,10 @@ this.telefono = telefono;
 public void setEmail (String email) {
 this.email = email;
 }
-public void setprofesion (String profesion) {
+public void setProfesion (String profesion) {
 this.profesion = profesion;
 }
-public void setEmail (int Anyos_de_experiencia) {
+public void setAnyos_de_experiencia (int Anyos_de_experiencia) {
 this.Anyos_de_experiencia = Anyos_de_experiencia;
 }
 
@@ -68,6 +83,12 @@ public void estaJubilado()
     if (this.edad>65)
     {System.out.println("Estas jubilao friki");}
     else {System.out.println("No estas jubilao friki");}
+}
+
+public void mostrarInfo() {
+    System.out.println("Persona: " + this.nombre + " " + this.apellidos + " - DNI: " + this.DNI +
+                       ". Edad: " + this.edad + ", Teléfono: " + this.telefono + ", Email: " + this.email +
+                       ". Profesión: " + this.profesion + ", Años de experiencia: " + this.Anyos_de_experiencia + ".");
 }
 
 }

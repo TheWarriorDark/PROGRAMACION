@@ -13,6 +13,20 @@ private int N_paginas;
 private int Anyo;
 private boolean Disponible_reserva;
 
+//Constructores
+public Libro() {
+}
+
+public Libro(String Titulo, String ISBN, String Editorial, String Idioma, int N_paginas, int Anyo, boolean Disponible_reserva) {
+    this.Titulo = Titulo;
+    this.ISBN = ISBN;
+    this.Editorial = Editorial;
+    this.Idioma = Idioma;
+    this.N_paginas = N_paginas;
+    this.Anyo = Anyo;
+    this.Disponible_reserva = Disponible_reserva;
+}
+
 //Setters
 public void setTitulo (String Titulo) {
 this.Titulo = Titulo;
@@ -32,7 +46,7 @@ this.N_paginas = N_paginas;
 public void setAnyo (int Anyo) {
 this.Anyo = Anyo;
 }
-public void setN (boolean Disponible_reserva) {
+public void setDisponible_reserva (boolean Disponible_reserva) {
 this.Disponible_reserva = Disponible_reserva;
 }
 
@@ -45,7 +59,7 @@ public String getEditorial () {return Editorial;
 }
 public String getIdioma () {return Idioma;
 }
-public int getN_paginasil () {return N_paginas;
+public int getN_paginas () {return N_paginas;
 }
 public int getAnyo () {return Anyo;
 }
@@ -55,19 +69,25 @@ public boolean getDisponible_reserva () {return Disponible_reserva;
 //Metodos
 public void estaDisponible()
 {
-    if (this.Disponible_reserva == true)
+    if (this.Disponible_reserva)
     {System.out.println("Está disponible el libro.");}
     else {System.out.println("No está disponible el libro.");}
 }
 
 public void esExtranjero()
 {
-    if (this.Idioma == "Español")
+    if (this.Idioma.equals("Español"))
     {System.out.println("Está disponible en tu idioma.");}
     else {System.out.println("No está en tu idioma.");}
 }
 
 public void informacion() {
+        String disponibilidad = this.Disponible_reserva ? "Está disponible" : "No está disponible";
+        System.out.println("Libro: " + this.Titulo + " - " + this.Editorial + " (" + this.Anyo + "). " +
+                           this.Idioma + ", " + this.N_paginas + " páginas. " + disponibilidad + ".");
+    }
+
+public void mostrarInfo() {
         String disponibilidad = this.Disponible_reserva ? "Está disponible" : "No está disponible";
         System.out.println("Libro: " + this.Titulo + " - " + this.Editorial + " (" + this.Anyo + "). " +
                            this.Idioma + ", " + this.N_paginas + " páginas. " + disponibilidad + ".");
